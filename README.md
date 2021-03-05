@@ -1,6 +1,6 @@
 # Liquid Timer
 
-![Workflow result](https://github.com/drampelt/compose-timer/workflows/Check/badge.svg)
+![Workflow result](https://github.com/drampelt/compose-countdown/actions/workflows/Check.yaml/badge.svg)
 
 
 ## :scroll: Description
