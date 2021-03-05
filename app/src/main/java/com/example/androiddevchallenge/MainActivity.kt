@@ -53,9 +53,9 @@ import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Replay
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.withFrameMillis
@@ -100,7 +100,7 @@ fun MyApp() {
             startTime = SystemClock.uptimeMillis()
             while (timeLeft > 0 && isActive && isRunning) {
                 timeLeft = totalTime - (SystemClock.uptimeMillis() - startTime)
-                withFrameMillis {  }
+                withFrameMillis { }
 
                 if (timeLeft <= 0) {
                     isRunning = false
